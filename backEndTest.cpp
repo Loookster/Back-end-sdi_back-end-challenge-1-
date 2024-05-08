@@ -1,3 +1,4 @@
+//FOR COMPILER OPTIONS THE LANGUAGE STD IS SET TO ISO C++ 11
 #include <iostream>
 #include <map>
 #include <climits> 
@@ -20,9 +21,9 @@ int main() {
     int carCount = 0; 
 
 
-    for (auto i = carInfo.begin(); i != carInfo.end(); ++i) {
-        int carSize = i->first;
-        int costPerCar = i->second;
+    for (auto it = carInfo.begin(); it != carInfo.end(); ++it) {
+        int carSize = it->first;
+        int costPerCar = it->second;
         
         int numOfCars = (seats + carSize - 1) / carSize; 
 
